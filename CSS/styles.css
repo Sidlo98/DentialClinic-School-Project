@@ -177,5 +177,50 @@ a {
   padding-top: 8rem;
   margin-right: 10rem;
 }
-
 /* ABOUT US END */
+
+/* SERVICes START */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+}
+.services-container h1 {
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-bottom: 3px solid var(--green-color);
+  font-weight: normal;
+  font-size: 2rem;
+  width: 32%;
+}
+.services-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services-box {
+  width: 32%;
+  text-align: center;
+  padding: 7rem;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+.services-box img {
+  padding: 1.5rem;
+}
+.services-box figure {
+  border-radius: 50%;
+  background-color: var(--green-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-5 figure {
+  padding: 0 0.79rem;
+}
+.services-box h2 {
+  font-weight: normal;
+}

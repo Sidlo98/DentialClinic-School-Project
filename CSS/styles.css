@@ -58,6 +58,7 @@ a {
 }
 .topmenu-item {
   display: flex;
+  align-items: center;
 }
 .topmenu-item i {
   margin-right: 0.5rem;

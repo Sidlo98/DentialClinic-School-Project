@@ -46,6 +46,9 @@ a {
   cursor: pointer;
   padding: 1rem 3rem;
 }
+.td05 {
+  transition-duration: 0.5s;
+}
 /* HELPERS END*/
 
 /* TOPMENU START */
@@ -62,6 +65,7 @@ a {
 }
 .topmenu-item i {
   margin-right: 0.5rem;
+  font-size: 1.2rem;
   color: var(--blue-color);
 }
 .topmenu-item a {
@@ -71,7 +75,7 @@ a {
 .topmenu-item li {
   padding: 0.5rem 0 0.5rem 0.5rem;
 }
-#topmenu-item-2 a i {
+.topmenu-item a:hover i {
   color: var(--green-color);
 }
 /* TOPMENU END */
@@ -292,5 +296,13 @@ a {
 
 /* MEDIAQUARIES START */
 
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
+
 /* MEDIAQUARIES END */
-/*  */

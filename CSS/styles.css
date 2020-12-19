@@ -36,7 +36,7 @@ a {
 
 /* HELPERS START*/
 .container {
-  padding: 0 15rem;
+  width: 73%;
   margin: auto;
 }
 .btn {
@@ -49,34 +49,42 @@ a {
 .td05 {
   transition-duration: 0.5s;
 }
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 /* HELPERS END*/
 
 /* TOPMENU START */
+.top-wrapper {
+  border: 1px solid #707070;
+}
 .topmenu-container {
   display: flex;
   justify-content: space-between;
   height: 4.5vh;
-  align-items: center;
-  border: 1px solid #707070;
 }
 .topmenu-item {
   display: flex;
   align-items: center;
 }
+.fa-clock {
+  padding-right: 0.5rem;
+}
 .topmenu-item i {
-  margin-right: 0.5rem;
   font-size: 1.2rem;
   color: var(--blue-color);
 }
 .topmenu-item a {
   color: var(--blue-color);
-  padding: 0.5rem 0 0.5rem 0.5rem;
-}
-.topmenu-item li {
-  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 .topmenu-item a:hover i {
   color: var(--green-color);
+}
+#topmenu-item-1,
+#topmenu-item-2,
+#topmenu-item-3 {
+  padding-right: 1.5rem;
 }
 /* TOPMENU END */
 
@@ -90,26 +98,39 @@ a {
 .mainmenu-item {
   display: flex;
 }
-.mainmenu-item li {
-  padding: 1rem 0 1rem 1rem;
-}
 .mainmenu-item a {
-  padding: 2rem 0rem 2rem 2rem;
   font-size: 1.3rem;
+  padding-left: 1.5rem;
 }
+.fa-bars {
+  display: none;
+  color: var(--blue-color);
+  font-size: 2rem;
+}
+.mainmenu-container button {
+  background-color: transparent;
+  color: transparent;
+  border-color: transparent;
+}
+
 /* MAINMENU END */
 
 /* SHOWCASE START */
-.showcase-container {
+.showcase-wrapper {
   background-color: var(--placehold-color-1);
-  padding: 0 12rem;
+}
+.showcase-container {
   display: flex;
+  justify-content: space-between;
+  width: 76%;
 }
 .showcase-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 10rem;
+}
+.showcase-item-2 {
+  max-width: 690px;
 }
 .showcase-item img {
   margin-top: 1.5rem;
@@ -118,11 +139,11 @@ a {
   font-size: 3.5rem;
   font-weight: normal;
   line-height: 1.1;
-  padding-bottom: 2rem;
 }
 .showcase-item p {
-  padding-bottom: 2rem;
+  margin: 2rem 0;
 }
+
 .showcase-item button {
   width: 15rem;
   color: #fff;
@@ -148,73 +169,78 @@ a {
   justify-content: center;
 }
 .about-us-container div {
-  width: 45%;
+  max-width: 705px;
+}
+.about-us-item-1 {
+  margin-top: 5rem;
 }
 .about-us-item h1 {
   font-size: 2.1rem;
   font-weight: normal;
   padding-bottom: 1.5rem;
   line-height: 1;
+
   border-bottom: 3px solid var(--green-color);
 }
 .about-us-item span {
   color: var(--blue-color);
 }
 .about-us-item p {
-  font-family: roboto;
-  padding-top: 2.5rem;
-  padding-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin-top: 2.5rem;
 }
 .about-us-item ul {
   display: flex;
   padding-top: 2.5rem;
-  padding-bottom: 3.5rem;
+  justify-content: space-between;
+  max-width: 578px;
 }
 .about-us-item li p {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  padding-right: 4rem;
   font-family: roboto slab;
 }
 .about-us-item b {
   color: var(--blue-color);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: normal;
 }
 .about-us-item img {
-  padding-top: 8rem;
-  margin-right: 10rem;
+  margin-top: 7rem;
+  margin-right: 7rem;
 }
 /* ABOUT US END */
 
 /* SERVICes START */
+.services-wrapper {
+  background-color: var(--background-color);
+  padding-bottom: 4rem;
+}
 .services-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color);
 }
 .services-container h1 {
-  justify-content: center;
   margin-top: 6rem;
   margin-bottom: 3rem;
-  padding: 1rem;
-  border-bottom: 3px solid var(--green-color);
+  padding-bottom: 1rem;
   font-weight: normal;
   font-size: 2rem;
-  width: 32%;
+  border-bottom: 3px solid var(--green-color);
+  text-align: center;
+  width: 450px;
 }
 .services-item {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  width: 104%;
 }
 .services-box {
-  width: 32%;
+  max-width: 450px;
   text-align: center;
   padding: 5rem 5rem;
   background-color: #fff;
-  margin-bottom: 1.5rem;
+  margin: 0.7rem;
   border-radius: 1rem;
 }
 .services-box img {
@@ -233,8 +259,7 @@ a {
 .services-box h2 {
   font-weight: normal;
   font-size: 1.3rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 .services-box p {
   color: var(--text-color);
@@ -250,16 +275,17 @@ a {
 /* SERVICES END */
 
 /* APPOINTMENT START */
-.appointment-container {
+.appointment-wrapper {
   background-color: #dedede;
-  padding: 0;
+}
+.appointment-wrapper-overlay {
+  background-color: var(--blue-color-80);
 }
 .appointment-item {
-  background-color: var(--blue-color-80);
   display: flex;
   justify-content: space-between;
+  height: 13vh;
   align-items: center;
-  padding: 3rem 15rem;
 }
 .appointment-item h1 {
   color: var(--Text-footer-color);
@@ -282,12 +308,12 @@ a {
 /* APPOINTMENT END */
 
 /* FOOTER START */
-.footer-container {
+.footer-wrapper {
   background-color: var(--blue-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
+}
+.footer-container {
+  text-align: center;
+  padding: 1.5rem 0;
 }
 .footer-item {
   color: var(--Text-footer-color-60);
@@ -296,13 +322,83 @@ a {
 
 /* MEDIAQUARIES START */
 
-@media (min-width: 768px) {
+@media (max-width: 450px) {
+  .services-container h1 {
+    width: 100%;
+  }
 }
-@media (min-width: 992px) {
+@media (max-width: 768px) {
+  .topmenu-container,
+  .about-us-item img,
+  .showcase-item img {
+    display: none;
+  }
+
+  .mainmenu-item-2 {
+    display: none;
+  }
+  .about-us-item ul li b {
+    font-size: 1.5rem;
+  }
+  .about-us-item ul li p {
+    font-size: 0.2rem;
+    margin-top: 0.5rem;
+  }
+  .showcase-item h1 {
+    font-size: 2.5rem;
+  }
+  .mainmenu-container i {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
-@media (min-width: 1200px) {
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .about-us-container,
+  .showcase-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .showcase-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+  .showcase-item,
+  .about-us-item,
+  .about-us-item ul {
+    text-align: center;
+    padding: 1rem 0 0 0;
+    max-width: 100%;
+  }
+  .showcase-item h1 {
+    margin-top: 2rem;
+  }
+  .about-us-item ul li p {
+    font-size: 1rem;
+  }
+  .showcase-item button {
+    align-self: center;
+  }
+  .appointment-item h1 {
+    display: none;
+  }
+  .appointment-item {
+    justify-content: center;
+  }
 }
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 1750px) {
+  .showcase-item-1 {
+    margin-right: 1rem;
+  }
 }
 
 /* MEDIAQUARIES END */

@@ -1,4 +1,4 @@
-# DentialClinic-School-Project
+# [DentialClinic-School-Project][https://sidlo98.github.io/DentialClinic-School-Project/]
 First School Project i HTML/CSS 
 
 Instructions:

@@ -1,6 +1,8 @@
 # DentialClinic-School-Project
 First School Project i HTML/CSS 
 
+https://sidlo98.github.io/DentialClinic-School-Project/
+
 Instructions:
 
 In this assignment, you will create a front page for the fictional company DentialClinic.
